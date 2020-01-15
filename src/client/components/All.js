@@ -23,17 +23,18 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="cards_collection">
-        {this.state.dpt.map(({ name, page, text }) => (
-          <div
-            //onClick={() => this.props.history.push(`${page}`, text)}
-            key={name}
-            className="card"
-          >
-            {/* <Card item={name} /> */}
-          </div>
-        ))}
-      </div>
+      <p>something</p>
+      // <div className="cards_collection">
+      //   {this.state.dpt.map(({ name, page, text }) => (
+      //     <div
+      //       //onClick={() => this.props.history.push(`${page}`, text)}
+      //       key={name}
+      //       className="card"
+      //     >
+      //       {/* <Card item={name} /> */}
+      //     </div>
+      //   ))}
+      // </div>
     );
   }
 }

@@ -10,7 +10,7 @@ const App = props => {
     <div className="home">
       <Navbar />
       <DisplayCards />
-      <All react-router={props.history} />
+      {/* <All react-router={props.history} /> */}
       <Footer />
     </div>
   );

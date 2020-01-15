@@ -15,8 +15,8 @@ const DisplayCards = props => {
   console.log(props);
   return (
     <div className="cards">
-      {CardItems.map(({ name, page }) => (
-        <Link to={page}>
+      {CardItems.map(({ name, page }, index) => (
+        <Link key={index} to={page}>
           <div
             // onClick={e => props.history.push(`${page}`)}
             className="card_item"

@@ -23,12 +23,12 @@ class Login extends React.Component {
 
   handleButton(event) {
     event.preventDefault();
-    alert(`email: ${this.state.email} password ${this.state.password}`);
+    this.props.history.push("/");
   }
 
   render() {
     return (
-      //
+    
       <div className="loginCard" style={{ width: "100vw", height: "100vh" }}>
         <div
           className="card"

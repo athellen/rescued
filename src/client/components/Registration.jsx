@@ -28,7 +28,7 @@ class Registration extends React.Component {
     // handler fuction with computed properites
 
     // produces a copy of the state
-    this.setState({ data: { ...this.state.data, [name]: [value] } });
+    this.setState({ data: { ...this.state.data, [name]: value } });
     // console.log({ [name]: [value] });
   }
 
@@ -43,6 +43,7 @@ class Registration extends React.Component {
   }
 
   render() {
+    console.log(this.state.data)
     return (
       <div className="profcard" style={{}}>
         <div className="cardia">
