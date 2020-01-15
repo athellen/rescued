@@ -1,0 +1,58 @@
+.department-container {
+  width: 100vw;
+  height: 100vh;
+  /* background-size: cover; */
+  margin: 0 auto;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+
+.department-container header {
+  height: 70px;
+  display: flex;
+  /* border: 1px solid white; */
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+.department-container main {
+  width: 100%;
+  /* background-color: blue; */
+}
+
+.department-container main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.department-container main section h2 {
+  margin: 15px 0;
+}
+
+.department-container .department-content {
+  background-color: transparent;
+}
+
+.department-container .department-content h3 {
+  text-align: center;
+}
+
+.department-container .department-content ul li {
+  list-style-type: disc;
+}
+
+.department-container footer {
+  height: 150px;
+  /* background-color: violet; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
