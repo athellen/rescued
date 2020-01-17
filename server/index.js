@@ -29,6 +29,9 @@ app.post("/registration", async (req, res) => {
   }
 });
 
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../..", "dist"));
+});
 app.get("/registration", async (req, res) => {
   try {
     const register = await profile.find({});
