@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-      <div className="container-fluid">
+      <div className="">
         <a className="navbar-brand">
           <img src="#" alt="" />
         </a>
@@ -27,7 +27,6 @@ function Navbar(props) {
               About
             </NavLink>
           </li>
-          
 
           <li className="nav-item">
             <a

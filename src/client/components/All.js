@@ -1,42 +1,64 @@
 import React from "react";
-import Card from "./Card";
-
-const All = [
-  { name: "Fire", page: "/fire", text: "Fire Department" },
-  {
-    name: "Meteorological",
-    page: "/meteorogical",
-    text: "Meteorological Department"
-  },
-  { name: "Security", page: "/security", text: "Security Department" },
-  { name: "Red Cross", page: "/redcross", text: "Red Cross Department" },
-  { name: "Medical", page: "/medical", text: "Medical Department" }
-];
-
-class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      dpt: All
-    };
-  }
-
-  render() {
-    return (
-      <p>something</p>
-      // <div className="cards_collection">
-      //   {this.state.dpt.map(({ name, page, text }) => (
-      //     <div
-      //       //onClick={() => this.props.history.push(`${page}`, text)}
-      //       key={name}
-      //       className="card"
-      //     >
-      //       {/* <Card item={name} /> */}
-      //     </div>
-      //   ))}
-      // </div>
-    );
-  }
+import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
+"mdbreact";
+import land from "../../images/land.jpg";
+const CarouselPage = () => {
+  return (
+    <div>
+      <MDBCarousel
+      activeItem={1}
+      length={3}
+      showControls={true}
+      showIndicators={true}
+      className="z-depth-1"
+    >
+      <MDBCarouselInner>
+        <MDBCarouselItem itemId="1">
+          <MDBView>
+            <img
+              className="d-block w-100"
+              src={land}
+              alt="First slide"
+            />
+          <MDBMask overlay="black-light" />
+          </MDBView>
+          <MDBCarouselCaption>
+            <h3 className="h3-responsive">Light mask</h3>
+            <p>First text</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId="2">
+          <MDBView>
+            <img
+              className="d-block w-100"
+              src={land}
+              alt="Second slide"
+            />
+          <MDBMask overlay="black-strong" />
+          </MDBView>
+          <MDBCarouselCaption>
+            <h3 className="h3-responsive">Strong mask</h3>
+            <p>Second text</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+        <MDBCarouselItem itemId="3">
+          <MDBView>
+            <img
+              className="d-block w-100"
+              src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="Third slide"
+            />
+          <MDBMask overlay="black-slight" />
+          </MDBView>
+          <MDBCarouselCaption>
+            <h3 className="h3-responsive">Slight Mast</h3>
+            <p>Third text</p>
+          </MDBCarouselCaption>
+        </MDBCarouselItem>
+      </MDBCarouselInner>
+    </MDBCarousel>
+    </div>
+  );
 }
 
-export default Home;
+export default CarouselPage;

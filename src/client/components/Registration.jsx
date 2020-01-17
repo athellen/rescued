@@ -1,5 +1,4 @@
 import React from "react";
-import hands from "../../images/hands.jpg";
 import axios from "axios";
 class Registration extends React.Component {
   constructor(props) {
@@ -45,7 +44,7 @@ class Registration extends React.Component {
   render() {
     console.log(this.state.data)
     return (
-      <div className="profcard" style={{}}>
+      <div className="profcard">
         <div className="cardia">
           <h5>Registration</h5>
           <hr />
