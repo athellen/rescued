@@ -22,13 +22,14 @@ class Department extends Component {
             <div className="department-content">
               <h3>What to do incase of fire</h3>
 
-              <ul>
-                <li>Get the fire extinguisher</li>
-                <li>Raise an Alarm</li>
-                <li>Call 111</li>
-                <li>Find the best possible exit route</li>
-                <li>Ifyour clothes catch fire, stop drop and roll</li>
-              </ul>
+              <p> The Red Cross, our last hope, had left us to starve </p>
+              <p>
+                {" "}
+                Whether it is a call to action for blood drives, disaster relief
+                or community outreach, the Kenyan Red Cross does an
+                extraordinary job at not only meeting the needs of a community
+                but also for the preparation and planning for long-term support
+              </p>
             </div>
           </section>
         </main>

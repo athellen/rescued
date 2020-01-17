@@ -2,12 +2,16 @@
 body {
   left: 0;
   top: 0;
+  bottom: 0%;
 }
 .home {
-  background: url(../images/land.jpg) no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-color: rgb(255, 255, 255);
 }
+
+.carousel-item {
+  height: 60vh !important;
+}
+
 .bg-dark {
   background: rgb(0, 0, 0) !important;
 }
@@ -121,5 +125,5 @@ body {
 .footer {
   background: #161a2f;
   color: #ffffff;
-  margin-top: 385px;
+
 }
