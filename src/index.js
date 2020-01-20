@@ -25,6 +25,7 @@ ReactDOM.render(
       <Route path="/registration" component={Registration} />
     </Switch>
   </BrowserRouter>,
+
   document.getElementById("root")
 );
 

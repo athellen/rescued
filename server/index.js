@@ -30,10 +30,11 @@ app.post("/registration", async (req, res) => {
   }
 });
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../..", "dist"));
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build", "index.html"));
 });
-app.get("/registration", async (req, res) => {
+
+app.post("/registration", async (req, res) => {
   try {
     const register = await profile.find({});
     res.status(200).send(register);
@@ -42,7 +43,7 @@ app.get("/registration", async (req, res) => {
   }
 });
 
-app.get("/registration/:id", async (req, res) => {
+app.post("/registration/:id", async (req, res) => {
   const _id = req.params.id;
   try {
     const info = await profile.findById(_id);
