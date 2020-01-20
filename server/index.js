@@ -4,8 +4,9 @@ const port = process.env.PORT || 4000;
 const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 
-mongoose.connect("mongodb://localhost:27017/data", {
+mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
   useCreateIndex: true
@@ -71,6 +72,8 @@ app.delete("/registration/:id", async (req, res) => {
     res.status(404).send();
   }
 });
+app.use("/ussd", require("./trial"));
+
 // creating aserver  coupled with mongo connection
 app.listen(process.env.PORT || 4000, () =>
   console.log(`Listening on port ${port}!`)

@@ -2,6 +2,7 @@ import React from "react";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
 "mdbreact";
 import land from "../../images/land.jpg";
+import earth from "../../images/earth.jpg";
 const CarouselPage = () => {
   return (
     <div>
@@ -17,7 +18,7 @@ const CarouselPage = () => {
           <MDBView>
             <img
               className="d-block w-100"
-              src={land}
+              src= {earth}
               alt="First slide"
             />
           <MDBMask overlay="black-light" />
