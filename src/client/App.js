@@ -3,7 +3,6 @@ import "./app.css";
 import Navbar from "./components/Navbar/Navbar";
 import DisplayCards from "./components/DisplayCards";
 import Footer from "./components/Footer";
-import land from "../images/land.jpg";
 import CarouselPage from "./components/All";
 
 

@@ -8,17 +8,16 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.navbar{
+.navbar {
   width: 100%;
 }
-.container-fluid{
+.container-fluid {
   width: 100%;
 }
 .carousel-item {
   height: 80vh !important;
-} w-30
-
-.bg-dark {
+}
+w-30 .bg-dark {
   background: rgb(0, 0, 0) !important;
 }
 .homecard {
@@ -37,12 +36,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .card_item:hover {
   border: solid 2px;
-  border-color: black;
+  border-color: #ffffff;
 }
 .loginCard {
   background: white;
@@ -86,8 +84,14 @@ body {
   display: flex;
 }
 
-.d-block{
+.d-block {
   width: 80rem;
+}
+
+.h3-responsive {
+  color: black;
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif !important;
 }
 @media only screen and (max-width: 768px) {
   .loginCard {
@@ -104,23 +108,23 @@ body {
     height: 700px;
   }
   .profcard {
-    background-color:blue;
+    background-color: blue;
   }
 }
 
-    @media only screen and (max-width: 1515px) {
-      .card_item{
-        width: 100px;
-        height: 60px;
-      }
-      .navbar{
-width: 100%;
-height: 100%;
-      }
-      .container-fluid{
-        width: 100%;
-      }
-    }
+@media only screen and (max-width: 1515px) {
+  .card_item {
+    width: 100px;
+    height: 60px;
+  }
+  .navbar {
+    width: 100%;
+    height: 100%;
+  }
+  .container-fluid {
+    width: 100%;
+  }
+}
 .inputWithIcon {
   position: relative;
 }
@@ -146,7 +150,14 @@ height: 100%;
 }
 
 .footer {
-  background: #161a2f;
+  background: #b44903;
   color: #ffffff;
-
+}
+.bg-dark {
+  background: #b44903 !important;
+}
+.about {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  font-size: 25px;
+  ;
 }

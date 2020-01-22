@@ -13,7 +13,7 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 const profile = require("./model/profile");
-app.use(express.static("dist"));
+app.use(express.static("build"));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

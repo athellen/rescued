@@ -1,65 +1,66 @@
 import React from "react";
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
-"mdbreact";
-import land from "../../images/land.jpg";
-import earth from "../../images/earth.jpg";
+import {
+  MDBCarousel,
+  MDBCarouselCaption,
+  MDBCarouselInner,
+  MDBCarouselItem,
+  MDBView,
+  MDBMask,
+  MDBContainer
+} from "mdbreact";
+import arid from "../../images/arid.jpg";
+import alarm from "../../images/alarm.jpg";
+import secure from "../../images/secure.jpg";
 const CarouselPage = () => {
   return (
     <div>
       <MDBCarousel
-      activeItem={1}
-      length={3}
-      showControls={true}
-      showIndicators={true}
-      className="z-depth-1"
-    >
-      <MDBCarouselInner>
-        <MDBCarouselItem itemId="1">
-          <MDBView>
-            <img
-              className="d-block w-100"
-              src= {earth}
-              alt="First slide"
-            />
-          <MDBMask overlay="black-light" />
-          </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">Light mask</h3>
-            <p>First text</p>
-          </MDBCarouselCaption>
-        </MDBCarouselItem>
-        <MDBCarouselItem itemId="2">
-          <MDBView>
-            <img
-              className="d-block w-100"
-              src={land}
-              alt="Second slide"
-            />
-          <MDBMask overlay="black-strong" />
-          </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">Strong mask</h3>
-            <p>Second text</p>
-          </MDBCarouselCaption>
-        </MDBCarouselItem>
-        <MDBCarouselItem itemId="3">
-          <MDBView>
-            <img
-              className="d-block w-100"
-              src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt="Third slide"
-            />
-          <MDBMask overlay="black-slight" />
-          </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">Slight Mast</h3>
-            <p>Third text</p>
-          </MDBCarouselCaption>
-        </MDBCarouselItem>
-      </MDBCarouselInner>
-    </MDBCarousel>
+        activeItem={1}
+        length={3}
+        showControls={true}
+        showIndicators={true}
+        className="z-depth-1"
+      >
+        <MDBCarouselInner>
+          <MDBCarouselItem itemId="1">
+            <MDBView>
+              <img className="d-block w-100" src={alarm} alt="First slide" />
+              <MDBMask overlay="black-light" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">While natural disasters capture headlines and national attention short-term, the work of recovery and rebuilding is long-term</h3>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="2">
+            <MDBView>
+              <img
+                className="d-block w-100"
+                src={arid}
+                alt=""
+              />
+              <MDBMask overlay="black-strong" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">While natural disasters capture headlines and national attention short-term, the work of recovery and rebuilding is long-term</h3>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="3">
+            <MDBView>
+              <img
+                className="d-block w-100"
+                src= "https://lh3.googleusercontent.com/Ybh3jsKQDNZ3oTGlt7nMwyY-Wru-GvEAsJShjVJQYh42-r8c_S-ZNe-FHhgpAOwxyaHTlXieCgUIJki64DHQmui3-4QaBg=s1200"
+                alt="Third slide"
+              />
+              <MDBMask overlay="black-slight" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">In helping one another we grow</h3>
+            </MDBCarouselCaption>
+          </MDBCarouselItem>
+        </MDBCarouselInner>
+      </MDBCarousel>
     </div>
   );
-}
+};
 
 export default CarouselPage;
