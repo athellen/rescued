@@ -8,8 +8,8 @@ class Department extends Component {
       <div
         className="department-container"
         style={{
-          background: `url(${fire})`,
-          backgroundSize: "cover",
+          background: "url(https://i1.wp.com/fire-extinguisher-servicing.com/wp-content/uploads/2019/12/Fire3-1.jpg?fit=1200%2C751&ssl=1)",
+          height: "78vh",
           color: "white"
         }}
       >

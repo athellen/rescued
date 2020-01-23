@@ -10,6 +10,7 @@ class Department extends Component {
         style={{
           background: `url(${med})`,
           backgroundSize: "cover",
+          height: "78vh",
           color: "black"
         }}
       >

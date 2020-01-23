@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-      <div className="">
+      <div className="container-fluid">
         <a className="navbar-brand">
           <img src="#" alt="" />
         </a>
