@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import red from "../../../images/red.jpg";
+import blood from "../../../images/blood.jpg";
 import "./department.css";
 
 class Department extends Component {
@@ -8,9 +8,10 @@ class Department extends Component {
       <div
         className="department-container"
         style={{
-          backgroundImage: "url(https://lh3.googleusercontent.com/4__lruxHoVYjOXuTYmdFOQg_EQfmg_RcW9suy1cbgBfalTZ1nnqwJ_GdFjUMHn9griI)",
+          backgroundImage: `url(${blood})`,
           backgroundSize: "cover",
-          color: "black"
+          color: "white",
+          height: "94vh",
         }}
       >
         <header>
@@ -20,8 +21,6 @@ class Department extends Component {
           <section>
             <h2>*111*4#</h2>
             <div className="department-content">
-              <h3>What to do incase of fire</h3>
-
               <p> The Red Cross, our last hope, had left us to starve </p>
               <p>
                 {" "}
@@ -34,7 +33,7 @@ class Department extends Component {
           </section>
         </main>
         <footer>
-          <h3>Incase of fire, text 'FIRE' and your location to *111*1#</h3>
+          <h3>Incase of emergency, text 'Help' and your location to *111*1#</h3>
         </footer>
       </div>
     );

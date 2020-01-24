@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import fire from "../../../images/fire.jpg";
 import "./department.css";
 
 class Department extends Component {
@@ -9,7 +8,7 @@ class Department extends Component {
         className="department-container"
         style={{
           background: "url(https://i1.wp.com/fire-extinguisher-servicing.com/wp-content/uploads/2019/12/Fire3-1.jpg?fit=1200%2C751&ssl=1)",
-          height: "78vh",
+          height: "100vh",
           color: "white"
         }}
       >
@@ -27,14 +26,19 @@ class Department extends Component {
                 <li>Raise an Alarm</li>
                 <li>Call 111</li>
                 <li>Find the best possible exit route</li>
-                <li>Ifyour clothes catch fire, stop drop and roll</li>
+                <li>If your clothes catch fire, stop drop and roll</li>
               </ul>
             </div>
           </section>
+          <div className="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/lUojO1HvC8c"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
         </main>
+        <div className= "foot">
         <footer>
           <h3>Incase of fire, text 'FIRE' and your location to *111*1#</h3>
         </footer>
+        </div>
       </div>
     );
   }

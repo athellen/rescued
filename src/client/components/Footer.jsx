@@ -3,18 +3,15 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer d-flex justify-content-around">
       <div>
         <p>
           <u>Contact Us On </u>
           <br />
-          <i
-            className="fas fa-envelope-open-text"
-            style={{ color: "blue" }}
-          ></i>{" "}
+          <i className="fa fa-envelope" aria-hidden="true"></i>
           *111#
           <br />
-          <i className="fas fa-phone-alt"></i>
+          <i class="fa fa-phone" aria-hidden="true"></i>
           111
         </p>
       </div>

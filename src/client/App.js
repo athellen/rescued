@@ -13,7 +13,7 @@ const App = props => {
       <div className="homeCarousel">
       <CarouselPage items />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

@@ -27,7 +27,6 @@ ReactDOM.render(
       <Route path="/About" component={About} />
       <Route path="/registration" component={Registration} />
     </Switch>
-    <Footer/>
   </BrowserRouter>,
 
   document.getElementById("root")

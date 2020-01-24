@@ -57,19 +57,19 @@ router.post("/", (req, res) => {
     res.send(response);
   } else if (len == 2) {
     if (initSelection == "1") {
-      response = `END Sent Successfully`;
+      response = `END Help is on the way`;
       postAlert(initSelection, response);
     } else if (initSelection == "2") {
-      response = `END Sent Successfully`;
+      response = `END Help is on the way`;
       postAlert(initSelection, response);
     } else if (initSelection == "3") {
-      response = `END Sent Successfully`;
+      response = `END Help is on the way`;
       postAlert(initSelection, response);
     } else if (initSelection == "4") {
-      response = `END Sent Successfully`;
+      response = `END Help is on the way`;
       postAlert(initSelection, response);
     } else if (initSelection == "5") {
-      response = `END Sent Successfully`;
+      response = `END Help is on the way`;
       postAlert(initSelection, response);
     }
   }

@@ -1,4 +1,5 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Fredoka+One|Lilita+One|Roboto&display=swap');
 body {
   left: 0;
   top: 0;
@@ -6,8 +7,20 @@ body {
 }
 .home {
   background-color: rgb(255, 255, 255);
+  height:100px !important;
 }
 
+.department-container{
+  font-family: 'Baloo Bhai', cursive;
+  font-weight: lighter;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.video{
+  display: block;
+  text-align: center;
+}
 .navbar {
   width: 100%;
 }
@@ -36,6 +49,7 @@ w-30 .bg-dark {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Fredoka One', cursive;
 }
 
 .card_item:hover {
@@ -91,10 +105,11 @@ w-30 .bg-dark {
 .h3-responsive {
   color: black;
   font-size: 50px;
-  font-family: Georgia, "Times New Roman", Times, serif !important;
+  font-family: 'Fredoka One', cursive;
 }
 .nav-link{
   color: black !important;
+  font-family: 'Fredoka One', cursive;
   ;
 }
 @media only screen and (max-width: 768px) {
@@ -154,14 +169,19 @@ w-30 .bg-dark {
 }
 
 .footer {
-  background: #b44903;
-  color: #ffffff;
+  background: #eb6f1d;
+  color: #000000;
+  font-family: 'Fredoka One', cursive;
 }
 .bg-dark {
-  background: #b44903 !important;
+  background: #eb6f1d !important;
 }
 .about {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  font-family: 'Fredoka One', cursive;
   font-size: 25px;
   ;
+}
+.foot{
+  color: white;
+  font-family: 'Lilita One', cursive;
 }

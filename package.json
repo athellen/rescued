@@ -23,6 +23,8 @@
   },
   "scripts": {
     "start1": "react-scripts start & node server/index.js",
+    "client": "react-scripts start",
+    "serve": "node server",
     "start": "node server/index.js",
     "build": "node server/index.js & react-scripts build ",
     "heroku-postbuild": "react-scripts build",

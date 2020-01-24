@@ -10,7 +10,7 @@ class Department extends Component {
         style={{
           background: `url(${med})`,
           backgroundSize: "cover",
-          height: "78vh",
+          height: "100vh",
           color: "black"
         }}
       >
@@ -21,21 +21,26 @@ class Department extends Component {
           <section>
             <h2>*111*5#</h2>
             <div className="department-content">
-              <h3>What to do incase of fire</h3>
+              <h3>Warning signs of a medical emergency</h3>
 
               <ul>
-                <li>Get the fire extinguisher</li>
-                <li>Raise an Alarm</li>
-                <li>Call 111</li>
-                <li>Find the best possible exit route</li>
-                <li>Ifyour clothes catch fire, stop drop and roll</li>
+                <li> Bleeding that does not stop</li>
+                <li> Breathing problems(difficulty in brathing, shortness of breath)</li>
+                <li> Change in mental status(such as unusual behaviour, confusion, difficulty arousing)</li>
+                <li> Chest pain</li>
+                <li> Choking</li>
+                <li> Coughing up or vomiting blood</li>
+                <li> Fainting or loss of consciousness</li>
+                <li> Feeling of committing suicide or murder</li>
               </ul>
             </div>
           </section>
         </main>
+        <div className="foot">
         <footer>
-          <h3>Incase of fire, text 'FIRE' and your location to *111*1#</h3>
+          <h3>Incase of emergency, text 'EMERGENCY' and your location to *111*5#</h3>
         </footer>
+        </div>
       </div>
     );
   }

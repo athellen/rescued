@@ -10,7 +10,7 @@ const Meteorological = () => {
       style={{
         background: `url(${floods})`,
         backgroundSize: "cover",
-        color: ""
+        color: "white"
       }}
     >
       <header>
@@ -20,21 +20,24 @@ const Meteorological = () => {
         <section>
           <h2>*111*4#</h2>
           <div className="department-content">
-            <h3>What to do incase of fire</h3>
+            <h3>Areas most likely to experience drought next month</h3>
 
             <ul>
-              <li>Get the fire extinguisher</li>
-              <li>Raise an Alarm</li>
-              <li>Call 111</li>
-              <li>Find the best possible exit route</li>
-              <li>Ifyour clothes catch fire, stop drop and roll</li>
+            <li>Mbeme</li>
+              <li>Ahero</li>
+              <li>Elgon</li>
+              <li>Moyale</li>
+              <li>Murang'a</li>
+              <li>Wote</li>
             </ul>
           </div>
         </section>
       </main>
+      <div className="meteor" fontFamily="'Lilita One', cursive">
       <footer>
-        <h3>Incase of fire, text 'FIRE' and your location to *111*1#</h3>
+        <h3>Incase of emergency, text 'HELP' and your location to *111*2#</h3>
       </footer>
+      </div>
     </div>
   );
 };
