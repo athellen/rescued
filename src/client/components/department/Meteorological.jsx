@@ -14,7 +14,7 @@ const Meteorological = () => {
       }}
     >
       <header>
-        <h1>This is Meteorological Department</h1>
+        <h1 className="fire">This is Meteorological Department</h1>
       </header>
       <main>
         <section>

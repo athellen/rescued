@@ -11,12 +11,20 @@ body {
 }
 
 .department-container{
-  font-family: 'Baloo Bhai', cursive;
   font-weight: lighter;
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
 }
-
+.nav{
+ margin-left: auto;
+ font-family: 'Roboto', sans-serif;
+}
+.text{
+  font-size: 40px;
+  color: black !important;
+  margin-left: auto;
+  font-family: 'Lilita One', cursive;
+}
 .video{
   display: block;
   text-align: center;
@@ -74,7 +82,13 @@ w-30 .bg-dark {
   margin-top: 40px;
   color: white;
 }
-
+.fire{
+  font-size: 40px;
+  font-family: 'Fredoka One', cursive;
+}
+.head{
+  color:orangered; 
+}
 .profcard {
   width: 100vw;
   height: 100vh;
@@ -185,3 +199,4 @@ w-30 .bg-dark {
   color: white;
   font-family: 'Lilita One', cursive;
 }
+

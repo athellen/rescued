@@ -43,13 +43,23 @@ app.post("/registration", async (req, res) => {
   }
 });
 
+app.post("/registrations", async (req, res) => {
+  try {
+    const registered = await profile.find({});
+    res.status(200).json(registered);
+  } catch (e) {
+    console.log(e);
+    res.status(501).send(e);
+  }
+});
+
 app.post("/registration/:id", async (req, res) => {
   const _id = req.params.id;
   try {
     const info = await profile.findById(_id);
     res.status(200).send(info);
   } catch (error) {
-    res.status(204).send();
+    res.status(400).send(error);
   }
 });
 
@@ -76,6 +86,4 @@ app.delete("/registration/:id", async (req, res) => {
 app.use("/ussd", require("./trial"));
 
 // creating aserver  coupled with mongo connection
-app.listen(process.env.PORT || 4000, () =>
-  console.log(`Listening on port ${port}!`)
-);
+app.listen(port, () => console.log(`Listening on port ${port}!`));

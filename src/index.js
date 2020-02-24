@@ -11,7 +11,8 @@ import Medical from "./client/components/department/Medicine";
 import RedCross from "./client/components/department/Redcross";
 import About from "./client/components/About";
 import Navbar from "./client/components/Navbar/Navbar";//#b44903
-import Footer from './client/components/Footer';
+import Profile from './client/components/Profile';
+import Sidebar from './client/admin/Sidebar';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -26,6 +27,8 @@ ReactDOM.render(
       <Route path="/medical" component={Medical} />
       <Route path="/About" component={About} />
       <Route path="/registration" component={Registration} />
+      <Route path="/profile" component={Profile} />
+      <Route path="/admin" component={Sidebar} />
     </Switch>
   </BrowserRouter>,
 

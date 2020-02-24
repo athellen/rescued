@@ -1,45 +1,56 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText
+} from "reactstrap";
 
-function Navbar(props) {
+const Example = props => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
-    <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand">
-          <img src="#" alt="" />
-        </a>
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            <NavLink to="/" className="nav-link">
-              Home
-            </NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/Profile" className="nav-link">
-              Profile
-            </NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink to="/About" className="nav-link">
-              About
-            </NavLink>
-          </li>
-
-          <li className="nav-item">
-            <a
-              href="#"
-              className="nav-link"
-              onClick={() => props.history.push("/login")}
-            >
-              Logout
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div>
+      <Navbar color="orange" light expand="md">
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <NavbarText className="text">Rescued</NavbarText>
+          <Nav className="nav" navbar>
+        <NavItem>
+          <NavLink href="/">Home</NavLink> 
+          </NavItem>
+            <NavItem>
+              <NavLink href="/About">About</NavLink>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                <i className="fas fa-user-circle" >User</i>
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem className="nav-link" onClick={() => props.history.push("/profile")}>Profile</DropdownItem>
+                <DropdownItem >
+                  <NavLink className="nav-link" onClick={() => props.history.push("/login")}>
+                    Logout
+                  </NavLink>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
   );
-}
-export default withRouter(Navbar);
+};
+
+export default withRouter(Example);

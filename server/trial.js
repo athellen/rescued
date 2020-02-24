@@ -40,36 +40,91 @@ router.post("/", (req, res) => {
         4. Red Cross
         5. Medical`;
     res.send(response);
-  } else if (text == "1") {
-    response = `CON Enter your location`;
+  } else if (text =="1") {
+    response = `CON Type of emergency:
+    1. House fire
+    2. Wild fire
+    3. Bush fire `;
     res.send(response);
-  } else if (text == "2") {
-    response = `CON Enter your location`;
+  } else if (text =="2") {
+    response = `CON Type of emergency:
+    1. Floods
+    2. Drought
+    3. Storm
+    4. Lightning
+    5. Hurricane `;
     res.send(response);
-  } else if (text == "3") {
-    response = `CON Enter your location`;
+  } else if (text =="3") {
+    response = `CON Type of emergency:
+    1. Robbery
+    2. Terrorist attack
+    3. Bomb threat
+    4. Hijacking
+    5. Inter-clan clashes `;
     res.send(response);
-  } else if (text == "4") {
-    response = `CON Enter your location`;
+  } else if (text =="4") {
+    response = `CON Type of emergency:
+    1. Drought
+    2. Blood transfussion
+    `;
     res.send(response);
-  } else if (text == "5") {
-    response = `CON Enter your location`;
+  } else if (text =="5") {
+    response = `CON Type of emergency:
+    1. Illness
+    2. Fire
+    3. Road Accident
+    `;
     res.send(response);
-  } else if (len == 2) {
+  }
+  // } else if (text == "1") {
+  //   response = `CON Enter your location`;
+  //   res.send(response);
+  // } else if (text == "2") {
+  //   response = `CON Enter your location`;
+  //   res.send(response);
+  // } else if (text == "3") {
+  //   response = `CON Enter your location`;
+  //   res.send(response);
+  // } else if (text == "4") {
+  //   response = `CON Enter your location`;
+  //   res.send(response);
+  // } else if (text == "5") {
+  //   response = `CON Enter your location`;
+  //   res.send(response);
+  // } 
+  else if (len == 2) {
     if (initSelection == "1") {
-      response = `END Help is on the way`;
+      response = `CON Enter your location`;
+      res.send(response);
+    } else if (initSelection == "2") {
+      response = `CON Enter your location`;
+      res.send(response);
+    } else if (initSelection == "3") {
+      response = `CON Enter your location`;
+      res.send(response);
+    } else if (initSelection == "4") {
+      response = `CON Enter your location`;
+      res.send(response);
+    } else if (initSelection == "5") {
+      response = `CON Enter your location`;
+      res.send(response);
+    }
+  }
+  else if (len == 3) {
+    if (initSelection == "1") {
+      response = `END Help is on its way`;
       postAlert(initSelection, response);
     } else if (initSelection == "2") {
-      response = `END Help is on the way`;
+      response = `END Help is on its way`;
       postAlert(initSelection, response);
     } else if (initSelection == "3") {
-      response = `END Help is on the way`;
+      response = `END Help is on its way`;
       postAlert(initSelection, response);
     } else if (initSelection == "4") {
-      response = `END Help is on the way`;
+      response = `END Help is on its way`;
       postAlert(initSelection, response);
     } else if (initSelection == "5") {
-      response = `END Help is on the way`;
+      response = `END Help is on its way`;
       postAlert(initSelection, response);
     }
   }

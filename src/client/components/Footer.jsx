@@ -11,7 +11,7 @@ export default function Footer() {
           <i className="fa fa-envelope" aria-hidden="true"></i>
           *111#
           <br />
-          <i class="fa fa-phone" aria-hidden="true"></i>
+          <i className="fa fa-phone" aria-hidden="true"></i>
           111
         </p>
       </div>

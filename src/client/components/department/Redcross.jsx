@@ -15,7 +15,7 @@ class Department extends Component {
         }}
       >
         <header>
-          <h1>This is Red Cross Department</h1>
+          <h1 className="fire">This is Red Cross Department</h1>
         </header>
         <main>
           <section>

@@ -14,7 +14,7 @@ class Department extends Component {
         }}
       >
         <header>
-          <h1>This is Security Department</h1>
+          <h1 className="fire">This is Security Department</h1>
         </header>
         <main>
           <section>
