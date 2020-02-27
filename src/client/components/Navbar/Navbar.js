@@ -21,7 +21,7 @@ const Example = props => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className="cool">
       <Navbar color="orange" light expand="md">
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

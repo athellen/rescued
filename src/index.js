@@ -13,6 +13,7 @@ import About from "./client/components/About";
 import Navbar from "./client/components/Navbar/Navbar";//#b44903
 import Profile from './client/components/Profile';
 import Sidebar from './client/admin/Sidebar';
+import Fir from './client/admin/fire';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -29,6 +30,7 @@ ReactDOM.render(
       <Route path="/registration" component={Registration} />
       <Route path="/profile" component={Profile} />
       <Route path="/admin" component={Sidebar} />
+      <Route path="/fir" component={Fir} />
     </Switch>
   </BrowserRouter>,
 

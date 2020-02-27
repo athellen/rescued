@@ -123,8 +123,33 @@ w-30 .bg-dark {
 }
 .nav-link{
   color: black !important;
+  font-family: 'Lilita One', cursive;
+}
+ul {
+  list-style-type: none;
+  padding: 20px 30px;
+  color: rgba(230,230,230,0.9);
+}
+ul li {
+  padding: 15px;
+  border-bottom: 2px solid rgba(100,100,100,0.3);
+
+}
+ul li:hover{
+background: #eb6f1d;
+}
+.sidebar {
+  position: fixed;
+  widows: 200px;
+  height: 100%;
+  background-color: black;
   font-family: 'Fredoka One', cursive;
-  ;
+}
+.box{
+  width: 40rem;
+  height: 25rem;
+  display: inline-flex;
+  justify-content: start;
 }
 @media only screen and (max-width: 768px) {
   .loginCard {
@@ -144,7 +169,9 @@ w-30 .bg-dark {
     background-color: blue;
   }
 }
-
+.cool{
+  background-color: #eb6f1d;
+}
 @media only screen and (max-width: 1515px) {
   .card_item {
     width: 100px;
