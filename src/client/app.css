@@ -25,9 +25,15 @@ body {
   margin-left: auto;
   font-family: 'Lilita One', cursive;
 }
+.left{
+  width: 50%;
+  float: left;
+}
 .video{
   display: block;
   text-align: center;
+  width: 50%;
+  float: right;
 }
 .navbar {
   width: 100%;
@@ -146,10 +152,8 @@ background: #eb6f1d;
   font-family: 'Fredoka One', cursive;
 }
 .box{
-  width: 40rem;
-  height: 25rem;
-  display: inline-flex;
-  justify-content: start;
+width: 98%;
+height: 25rem;
 }
 @media only screen and (max-width: 768px) {
   .loginCard {

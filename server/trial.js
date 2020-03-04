@@ -76,22 +76,6 @@ router.post("/", (req, res) => {
     `;
     res.send(response);
   }
-  // } else if (text == "1") {
-  //   response = `CON Enter your location`;
-  //   res.send(response);
-  // } else if (text == "2") {
-  //   response = `CON Enter your location`;
-  //   res.send(response);
-  // } else if (text == "3") {
-  //   response = `CON Enter your location`;
-  //   res.send(response);
-  // } else if (text == "4") {
-  //   response = `CON Enter your location`;
-  //   res.send(response);
-  // } else if (text == "5") {
-  //   response = `CON Enter your location`;
-  //   res.send(response);
-  // } 
   else if (len == 2) {
     if (initSelection == "1") {
       response = `CON Enter your location`;
